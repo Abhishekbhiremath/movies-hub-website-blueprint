@@ -1,0 +1,50 @@
+header{
+    text-align: center;
+    color: red;
+    background-color: rgb(150, 209, 33);
+}
+header h1{
+    font-size: 50px;
+}
+.we{
+    color: saddlebrown;
+    font-size: 20px;
+    padding-bottom: 2em;
+}
+main{
+    margin:auto ;
+    max-width: 1040px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 10px;
+}
+
+section{
+    padding: 5px;
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    transition: tranform 0.3s ease-in-out;
+}
+
+section :hover{
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+    main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media query for devices with a max-width of 480px (typical phones) */
+@media only screen and (max-width: 480px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+
